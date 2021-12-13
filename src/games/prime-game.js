@@ -4,7 +4,7 @@ import isNumberPrime from '../utils/isNumberPrime.js';
 
 const getPrimeParams = () => {
   const currentNumber = generateRandomNumber();
-  const rightAnswer = isNumberPrime(currentNumber);
+  const rightAnswer = isNumberPrime(currentNumber) ? 'yes' : 'no';
   return [currentNumber, rightAnswer];
 };
 
