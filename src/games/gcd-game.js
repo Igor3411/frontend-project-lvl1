@@ -1,7 +1,6 @@
 import generateRandomNumber from '../utils/generateRandomNumber.js';
 import gameTamplate from '../index.js';
-
-const getGcd = (num1, num2) => (num1 !== 0 ? getGcd(num2 % num1, num1) : String(num2));
+import getGcd from '../utils/getGcd.js';
 
 const getGcdParams = () => {
   const firstNumber = generateRandomNumber();
