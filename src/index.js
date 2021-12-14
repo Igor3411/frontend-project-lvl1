@@ -1,13 +1,13 @@
 import readlineSync from 'readline-sync';
 import sayHello from './cli.js';
-import { countEvenGames } from './constants/numbers.js';
+import { GAMES_COUNT } from './constants/numbers.js';
 
 const gameTamplate = (rules, getGameParams) => {
   const name = sayHello();
 
   console.log(rules);
 
-  for (let i = 0; i < countEvenGames; i += 1) {
+  for (let i = 0; i < GAMES_COUNT; i += 1) {
     const [question, rightAnswer] = getGameParams();
     console.log(`Question: ${question}`);
 

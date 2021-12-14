@@ -1,4 +1,4 @@
-export const maxRandomNumber = 100;
-export const countEvenGames = 3;
-export const minLengthProgression = 5;
-export const maxLengthProgression = 10;
+export const MAX_RANDOM_NUMBER = 100;
+export const GAMES_COUNT = 3;
+export const MIN_LENGTH_PROGRESSION = 5;
+export const MAX_LENGTH_PROGRESSION = 10;

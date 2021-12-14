@@ -1,15 +1,15 @@
-import { operations } from '../constants/other.js';
+import { OPERATIONS } from '../constants/other.js';
 
 const resolveExpression = (leftOperand, rightOperand, operation) => {
   let result = NaN;
   switch (operation) {
-    case operations[0]:
+    case OPERATIONS[0]:
       result = leftOperand * rightOperand;
       break;
-    case operations[1]:
+    case OPERATIONS[1]:
       result = leftOperand - rightOperand;
       break;
-    case operations[2]:
+    case OPERATIONS[2]:
       result = leftOperand + rightOperand;
       break;
     default:

@@ -1,14 +1,15 @@
 import generateRandomNumber from '../utils/generateRandomNumber.js';
 import gameTamplate from '../index.js';
+import { EVEN_RULES, YES, NO } from '../constants/messages.js';
 
 const getEvenParams = () => {
   const currentNumber = generateRandomNumber();
-  const rightAnswer = currentNumber % 2 === 0 ? 'yes' : 'no';
+  const rightAnswer = currentNumber % 2 === 0 ? YES : NO;
   return [currentNumber, rightAnswer];
 };
 
 const runEvenGame = () => {
-  const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
+  const rules = EVEN_RULES;
 
   gameTamplate(rules, getEvenParams);
 };

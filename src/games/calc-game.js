@@ -1,23 +1,24 @@
 import generateRandomNumber from '../utils/generateRandomNumber.js';
 import generateRandomElementFromArray from '../utils/generateRandomElementFromArray.js';
 import resolveExpression from '../utils/resolveExpression.js';
-import { operations } from '../constants/other.js';
+import { OPERATIONS } from '../constants/other.js';
+import { CALC_RULES } from '../constants/messages.js';
 import gameTamplate from '../index.js';
 
-const getCulcParams = () => {
+const getCalcParams = () => {
   const leftOperand = generateRandomNumber();
   const rightOperand = generateRandomNumber();
-  const operation = generateRandomElementFromArray(operations);
+  const operation = generateRandomElementFromArray(OPERATIONS);
   const result = resolveExpression(leftOperand, rightOperand, operation);
   const question = `${leftOperand} ${operation} ${rightOperand}`;
 
   return [question, result];
 };
 
-const runCulcGame = () => {
-  const rules = 'What is the result of the expression?';
+const runCalcGame = () => {
+  const rules = CALC_RULES;
 
-  gameTamplate(rules, getCulcParams);
+  gameTamplate(rules, getCalcParams);
 };
 
-export default runCulcGame;
+export default runCalcGame;

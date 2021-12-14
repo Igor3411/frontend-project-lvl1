@@ -1,9 +1,9 @@
 import generateRandomNumber from './generateRandomNumber.js';
-import { minLengthProgression, maxLengthProgression } from '../constants/numbers.js';
+import { MIN_LENGTH_PROGRESSION, MAX_LENGTH_PROGRESSION } from '../constants/numbers.js';
 
 const generateProgression = () => {
   const step = generateRandomNumber();
-  const length = generateRandomNumber(minLengthProgression, maxLengthProgression);
+  const length = generateRandomNumber(MIN_LENGTH_PROGRESSION, MAX_LENGTH_PROGRESSION);
   const startNumber = generateRandomNumber();
 
   const result = [];

@@ -1,2 +1,2 @@
-// eslint-disable-next-line import/prefer-default-export
-export const operations = ['*', '-', '+'];
+export const OPERATIONS = ['*', '-', '+'];
+export const EMPTY_SYMBOL = '..';
