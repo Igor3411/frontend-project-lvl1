@@ -1,4 +1,4 @@
-import { MAX_RANDOM_NUMBER } from '../constants/numbers.js';
+const MAX_RANDOM_NUMBER = 100;
 
 const generateRandomNumber = (min = 0, max = MAX_RANDOM_NUMBER) => {
   const ceiledMin = Math.ceil(min);

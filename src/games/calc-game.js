@@ -1,9 +1,23 @@
 import generateRandomNumber from '../utils/generateRandomNumber.js';
-import generateRandomElementFromArray from '../utils/generateRandomElementFromArray.js';
-import resolveExpression from '../utils/resolveExpression.js';
-import { OPERATIONS } from '../constants/other.js';
-import { CALC_RULES } from '../constants/messages.js';
-import gameTamplate from '../index.js';
+import startGame from '../index.js';
+
+const CALC_RULES = 'What is the result of the expression?';
+const OPERATIONS = ['*', '-', '+'];
+
+const generateRandomElementFromArray = (array) => array[generateRandomNumber(0, array.length - 1)];
+
+const resolveExpression = (leftOperand, rightOperand, operation) => {
+  switch (operation) {
+    case OPERATIONS[0]:
+      return leftOperand * rightOperand;
+    case OPERATIONS[1]:
+      return leftOperand - rightOperand;
+    case OPERATIONS[2]:
+      return leftOperand + rightOperand;
+    default:
+      return NaN;
+  }
+};
 
 const getCalcParams = () => {
   const leftOperand = generateRandomNumber();
@@ -18,7 +32,7 @@ const getCalcParams = () => {
 const runCalcGame = () => {
   const rules = CALC_RULES;
 
-  gameTamplate(rules, getCalcParams);
+  startGame(rules, getCalcParams);
 };
 
 export default runCalcGame;
