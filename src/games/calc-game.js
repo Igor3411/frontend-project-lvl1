@@ -26,7 +26,7 @@ const getCalcParams = () => {
   const result = resolveExpression(leftOperand, rightOperand, operation);
   const question = `${leftOperand} ${operation} ${rightOperand}`;
 
-  return [question, result];
+  return [question, String(result)];
 };
 
 const runCalcGame = () => {
