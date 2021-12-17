@@ -20,11 +20,12 @@ const startGame = (rules, getGameParams) => {
 
     if (!isAnswerRight) {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${rightAnswer}.`);
-      return console.log(`Let's try again, ${name}!`);
+      console.log(`Let's try again, ${name}!`);
+      return;
     }
     console.log('Correct!');
   }
-  return console.log(`Congratulations, ${name}!`);
+  console.log(`Congratulations, ${name}!`);
 };
 
 export default startGame;

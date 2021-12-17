@@ -1,7 +1,8 @@
 import generateRandomNumber from '../utils/generateRandomNumber.js';
 import startGame from '../index.js';
-import { YES, NO } from '../constants/messages.js';
 
+const YES = 'yes';
+const NO = 'no';
 const PRIME_RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isNumberPrime = (number) => {

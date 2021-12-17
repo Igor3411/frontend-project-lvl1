@@ -8,11 +8,11 @@ const generateRandomElementFromArray = (array) => array[generateRandomNumber(0, 
 
 const resolveExpression = (leftOperand, rightOperand, operation) => {
   switch (operation) {
-    case OPERATIONS[0]:
+    case '*':
       return leftOperand * rightOperand;
-    case OPERATIONS[1]:
+    case '-':
       return leftOperand - rightOperand;
-    case OPERATIONS[2]:
+    case '+':
       return leftOperand + rightOperand;
     default:
       return NaN;
