@@ -14,9 +14,7 @@ const getGcdParams = () => {
 };
 
 const runGcdGame = () => {
-  const rules = GCD_RULES;
-
-  startGame(rules, getGcdParams);
+  startGame(GCD_RULES, getGcdParams);
 };
 
 export default runGcdGame;

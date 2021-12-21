@@ -32,9 +32,7 @@ const getProgressParams = () => {
 };
 
 const runProgressionGame = () => {
-  const rules = PROGRESSION_RULES;
-
-  startGame(rules, getProgressParams);
+  startGame(PROGRESSION_RULES, getProgressParams);
 };
 
 export default runProgressionGame;

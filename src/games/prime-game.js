@@ -24,9 +24,7 @@ const getPrimeParams = () => {
 };
 
 const runPrimeGame = () => {
-  const rules = PRIME_RULES;
-
-  startGame(rules, getPrimeParams);
+  startGame(PRIME_RULES, getPrimeParams);
 };
 
 export default runPrimeGame;
